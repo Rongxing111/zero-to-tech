@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 # 前端启动: npm run dev
-# 后端启动: 先进入虚拟环境(zero-to-tech),然后 cd backend ; fastapi dev
+# 后端启动: 先进入虚拟环境 .\.venv\Scripts\Activate.ps1 ,然后 cd backend ; fastapi dev
 
 app = FastAPI()
 app.add_middleware(
