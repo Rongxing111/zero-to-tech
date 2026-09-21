@@ -18,6 +18,7 @@ export default function InputCard({ onResult }) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
+        credentials: "include", // 跨域也要带上 session_id cookie，后端才能把记录存进同一个会话
       });
 
       if (!res.ok) {
